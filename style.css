@@ -39,6 +39,7 @@
     }
     #endingcard{
       display: none;
+      text-align:center
     }
     .icons{
       display: flex;
@@ -129,4 +130,3 @@
       background: white;
       color: hsl(25, 97%, 53%);
     }
-
