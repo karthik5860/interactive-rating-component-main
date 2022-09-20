@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <div class="container">
+     <div id="ratingcard">
+        <!-- Rating state start -->
+        <div class="icons"><img src="images/icon-star.svg" alt="icon"></div>
+        <h1>How did we do?</h1>
+
+        <div class="paragraph">
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </div>
+
+        <form id="ratingcircle" name="ratingcircle">
+          <input type="radio" name="rating" value="1" id = "A1" title="1">
+          <input type="radio" name="rating" value="2" id = "A2" title="2">
+          <input type="radio" name="rating" value="3" id = "A3" title="3">
+          <input type="radio" name="rating" value="4" id = "A4" title="4">
+          <input type="radio" name="rating" value="5" id = "A5" title="5">
+        </form>
+        <input type="button" id="submit" value="submit" onclick="switcH()">
+        <!-- Rating state end -->
+     </div>
+      <div id="endingcard">
+        <center><img src="images/illustration-thank-you.svg" alt="phone"></center>
+        <!-- Thank you state start -->
+
+        <center><div class="resultbar">You selected  &nbsp <span id="result"></span> &nbsp out of 5</div></center>
+
+        <center><h1>Thank you!</h1></center>
+
+        <center>We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</center>
+
+        <!-- Thank you state end -->
+     </div>
+  </div>
+</body>
+</html>
+<script type="text/javascript" src="style.js"></script>

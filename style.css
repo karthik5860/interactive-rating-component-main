@@ -1,0 +1,132 @@
+
+
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+    body {
+      -ms-overflow-style: none; 
+      scrollbar-width: none;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+      background: hsl(216, 12%, 8%);
+      color: hsl(217, 12%, 63%);
+    }
+    h1{
+      color: white;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 350px;
+      background: hsl(213, 19%, 18%);
+      border-radius: 30px;
+      padding: 40px;
+    }
+    #submit{
+      background: hsl(25, 97%, 53%);
+      color: white;
+      height: 60px;
+      width: 100%;
+      appearance: none;
+      border-radius: 30px;
+    }
+    #endingcard{
+      display: none;
+    }
+    .icons{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      background:  hsl(213, 17%, 28%)
+    }    
+    .resultbar{
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 250px;
+      border-radius: 20px;
+      background:  hsl(213, 17%, 28%);
+      color: hsl(25, 97%, 53%);
+      font-size: 17px;
+    }
+    .paragraph{
+      font-size: 17px;
+    }
+    #ratingcircle{
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    [type="radio"]{
+      appearance: none;
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      background: hsl(213, 17%, 28%);
+    }
+    #A1::before{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      content: "1";
+      color:  hsl(217, 12%, 63%);
+    }
+    #A2::before{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      content: "2";
+      color:  hsl(217, 12%, 63%);
+    }    
+    #A3::before{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      content: "3";
+      color:  hsl(217, 12%, 63%);
+    }    
+    #A4::before{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      content: "4";
+      color:  hsl(217, 12%, 63%);
+    }    
+    #A5::before{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      content: "5";
+      color:  hsl(217, 12%, 63%);
+    }  
+    [type="radio"]:hover{
+      background: hsl(217, 12%, 63%);
+    }
+    [type="radio"]:checked{
+      background: hsl(25, 97%, 53%)
+    }    
+    #A1:hover::before,#A2:hover::before,#A3:hover::before,#A4:hover::before,#A5:hover::before,#A1:checked::before,#A2:checked::before,#A3:checked::before,#A4:checked::before,#A5:checked::before{
+      color:  white;
+    }
+    #submit:hover{
+      background: white;
+      color: hsl(25, 97%, 53%);
+    }
+
